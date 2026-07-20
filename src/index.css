@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', serif;
+  font-family: "Lato", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(#222c31, #111d32);
@@ -33,7 +33,7 @@ body {
 }
 
 #main-header h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
   color: #84b0fc;
 }
@@ -84,7 +84,7 @@ body {
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ main {
   margin-bottom: 0.15rem;
   font-weight: bold;
   font-size: 0.8rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #414956;
 }
 
@@ -129,7 +129,7 @@ main {
   background-color: #fff;
   color: #414956;
   font-size: 0.8rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #new-challenge-images {
@@ -230,7 +230,7 @@ main {
 
 .challenge-item header p {
   margin-top: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.7rem;
 }
 
@@ -366,4 +366,264 @@ main {
   background-color: #0f61ef;
   color: #fff;
   font-size: 0.5rem;
+}
+
+/* ========================= */
+/* Tablet (max-width: 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  #main-header {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  #hero-img {
+    width: 90%;
+    height: 50vh;
+  }
+
+  #welcome-header-content {
+    width: 90%;
+    left: 5%;
+  }
+
+  #welcome-header-content h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .challenge-items {
+    max-width: 100%;
+  }
+
+  .modal {
+    width: 80%;
+  }
+}
+
+/* ========================= */
+/* Mobile Tablet (max-width: 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  #main-header {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem auto;
+  }
+
+  #main-header h1 {
+    font-size: 1.25rem;
+  }
+
+  #hero-img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  #hero-image {
+    width: 14rem;
+    max-width: 50%;
+    left: 25%;
+    bottom: 8%;
+  }
+  /*  */
+
+  #welcome-header-content {
+    width: 90%;
+    left: 5%;
+    top: 25%;
+  }
+
+  #welcome-header-content h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  #cta-link {
+    font-size: 0.75rem;
+  }
+
+  #welcome-content section {
+    margin: 3rem 0;
+  }
+
+  #welcome-content h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  /* #tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #tabs button {
+    width: 100%;
+    justify-content: center;
+  } */
+
+  .challenge-item header {
+    gap: 0.75rem;
+  }
+
+  .challenge-item img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .challenge-item header h2 {
+    font-size: 1.1rem;
+  }
+
+  .challenge-item-actions {
+    justify-content: flex-start;
+    margin-top: 0.75rem;
+  }
+
+  .new-challenge-actions {
+    flex-direction: column;
+  }
+
+  .new-challenge-actions button {
+    width: 100%;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+/* ========================= */
+/* Mobile Phone (max-width: 576px) */
+/* ========================= */
+@media (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+
+  #main-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  #main-header h1 {
+    font-size: 1.1rem;
+  }
+
+  #hero-img {
+    height: 35vh;
+    margin: 1rem auto;
+  }
+
+  #welcome-header {
+    height: 90vh;
+  }
+
+  #hero-image {
+    width: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+
+  #welcome-header-content {
+    top: 20%;
+  }
+
+  #welcome-header-content h1 {
+    font-size: 1.6rem;
+  }
+  #welcome-content {
+    padding: 1rem;
+  }
+
+  #welcome-content h2 {
+    font-size: 1.5rem;
+  }
+
+  #new-challenge input,
+  #new-challenge textarea {
+    font-size: 1rem;
+  }
+
+  #new-challenge-images {
+    grid-template-columns: repeat(auto-fit, 2.5rem);
+  }
+
+  #new-challenge-images li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #challenges {
+    padding: 0.75rem;
+  }
+
+  .challenge-item header {
+    flex-direction: column;
+  }
+
+  .challenge-item-actions {
+    justify-content: space-between;
+  }
+
+  .badge {
+    font-size: 0.45rem;
+  }
+
+  .modal {
+    width: calc(100% - 1rem);
+  }
+}
+
+/* ========================= */
+/* Small Mobile (max-width: 360px) */
+/* ========================= */
+@media (max-width: 360px) {
+  #main-header h1 {
+    font-size: 1rem;
+  }
+
+  #welcome-header-content h1 {
+    font-size: 1.4rem;
+  }
+
+  #cta-link {
+    padding: 0.4rem 0.75rem;
+  }
+
+  #welcome-content {
+    padding: 1rem;
+  }
+  #welcome-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .challenge-item header h2 {
+    font-size: 1rem;
+  }
+
+  .challenge-item-description {
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    padding: 0.75rem;
+  }
+
+  .new-challenge-actions {
+    gap: 0.5rem;
+  }
 }
